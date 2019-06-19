@@ -5,9 +5,14 @@ import { applyMiddleware } from "./utils";
 import middleware from "./middleware";
 import apiRouter from './routes/apiRouter'
 
-const router = express();
-applyMiddleware(middleware, router);
+//Initiate db connections
 
+
+
+
+const router = express();
+
+applyMiddleware(middleware, router);
 // print url on every request
 router.use((req: Request, res: Response, next: NextFunction)=>
 {

@@ -8,6 +8,7 @@ const express_1 = __importDefault(require("express"));
 const utils_1 = require("./utils");
 const middleware_1 = __importDefault(require("./middleware"));
 const apiRouter_1 = __importDefault(require("./routes/apiRouter"));
+//Initiate db connections
 const router = express_1.default();
 utils_1.applyMiddleware(middleware_1.default, router);
 // print url on every request
